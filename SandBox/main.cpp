@@ -25,8 +25,8 @@ ULLONG vectAccumulate(std::vector<ULLONG>& vect)
 }
 int main()
 {
-	constexpr int number_of_threads = 1000;                      //3  ,6 , 8 , 9 , 5 , 10000
-	constexpr ULLONG  number_of_items = 1000 * 1000 * 1000;      //7 , 21 ,21 ,26, 10 ,1000 * 1000 * 1000
+	constexpr int number_of_threads = 1000;                      //1, 5,  3 , 6 , 8 , 9 , 5 , 10000
+	constexpr ULLONG  number_of_items = 1000 * 1000 * 1000;      //5, 1, ,7 , 21 ,21 ,26, 10 ,1000 * 1000 * 1000
 
 	constexpr ULLONG  step = number_of_items / number_of_threads;
 
@@ -74,5 +74,3 @@ int main()
 	std::cout << "total: " << total << "\n";
 
 }
-
-
