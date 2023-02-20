@@ -8,13 +8,11 @@ typedef unsigned long long ULLONG;
 void sumNum(ULLONG& vectSum, ULLONG  start, ULLONG  end)
 {
 
-	ULLONG  sumItems{ 0 };
 	for (ULLONG i = start; i <= end; ++i)
 	{
-		sumItems += i;
+		vectSum += i;
 
 	}
-	vectSum = sumItems;
 }
 
 ULLONG vectAccumulate(std::vector<ULLONG>& vect)
@@ -45,8 +43,9 @@ int main()
 	ULLONG  start = 0;
 	ULLONG  end = 0;
 	std::vector<std::thread> workers;
-	std::vector<ULLONG > vectSum(number_of_threads);
+	std::vector<ULLONG > vectSum(number_of_threads, 0);
 
+	//Assigning a task to a specific thread
 	for (; index < NUM; ++index, counter += step)
 	{
 		start = counter;
