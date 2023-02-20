@@ -1,6 +1,2 @@
-# C++ Concurrent programming 
-# How to kill threads
-While C++ does not provide a straightforward method for cleanly terminating threads, 
-it is possible to achieve a clean exit using a combination of synchronization primitives such as std::condition_variable, 
-std::unique_lock, and std::wait_for. 
-By properly utilizing these tools, a thread can be safely and efficiently terminated in a way that avoids potential resource leaks or other undesirable side effects.
+# Efficient Multithreaded Sum Calculation for Large Numbers
+This is a program for parallelizing the calculation of the sum of large numbers using multiple threads. The program divides the range of numbers to be summed into smaller segments and assigns each segment to a separate thread for processing. The individual thread results are then combined to obtain the final sum. This approach speeds up the calculation of the sum, especially for large input ranges, by utilizing multiple CPU cores in parallel.
