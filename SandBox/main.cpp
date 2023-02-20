@@ -11,7 +11,6 @@ void sumNum(ULLONG& vectSum, ULLONG  start, ULLONG  end)
 	for (ULLONG i = start; i <= end; ++i)
 	{
 		vectSum += i;
-
 	}
 }
 
