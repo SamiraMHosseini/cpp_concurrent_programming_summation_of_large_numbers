@@ -41,7 +41,7 @@ int main()
 	}
 
 	ULLONG  counter = 1;
-	ULLONG  index = 0;
+	size_t  index = 0;
 	ULLONG  start = 0;
 	ULLONG  end = 0;
 	std::vector<std::thread> workers;
@@ -71,7 +71,7 @@ int main()
 
 	);
 
-	ULLONG  total = vectAccumulate(vectSum);
+	const ULLONG  total = vectAccumulate(vectSum);
 
 	std::cout << "total: " << total << "\n";
 
